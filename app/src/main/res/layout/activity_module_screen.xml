@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.moutamid.quickdrop.ModuleScreen">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <ImageView
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/loginbg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top"
+            android:layout_marginTop="-178dp"
+            android:background="@drawable/loginbgs"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/driver"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/button_border"
+                android:backgroundTint="@color/purple_500"
+                android:drawableRight="@drawable/ic_baseline_arrow_right_alt_24"
+                android:drawablePadding="5dp"
+                android:text="Login with Driver"
+                android:textColor="@android:color/black" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="OR"
+                android:textColor="@android:color/white" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/customer"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_border"
+                android:backgroundTint="@color/purple_500"
+                android:drawableRight="@drawable/ic_baseline_arrow_right_alt_24"
+                android:drawablePadding="5dp"
+                android:text="Login with Customer"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
